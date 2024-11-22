@@ -1,0 +1,141 @@
+ /* General Reset */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    /* Welcome */
+
+    position: relative;
+    width: 390px;
+    height: 844px;
+
+    background: #FFFFFF;
+
+}
+
+/* Container for Layout */
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Logo */
+.logo_white {
+    position: absolute;
+    width: 60px;
+    height: 59px;
+    left: 52px;
+    top: 64px;
+}
+
+h3 {
+    /* Welcome Back */
+
+    position: absolute;
+    width: 122px;
+    height: 68px;
+    left: 52px;
+    top: 139px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+
+    color: #FFFFFF;
+
+
+}
+
+/* Sign In Button */
+.signin {
+    position: absolute;
+    left: 50%;
+    top: 619px;
+    transform: translateX(-50%);
+    /* Centers the button horizontally */
+}
+
+/* Sign Up Button */
+.signup_button {
+    position: absolute;
+    left: 50%;
+    top: 707px;
+    /* Adjusted spacing between buttons */
+    transform: translateX(-50%);
+    /* Centers the button horizontally */
+    margin-top: 15px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    body {
+        justify-content: flex-start;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    .signin,
+    .signup_button {
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h3 {
+        font-size: 36px;
+    }
+
+    .signin,
+    .signup_button {
+        max-width: 400px;
+    }
+}
+ /* Launch Screen */
+ .lauchscreen {
+    position: relative;
+    width: 390px;
+    height: 844px;
+
+    background: #FFFFFF;
+}
+
+/* Colorful-Logo 1 */
+.logo {
+    position: absolute;
+    width: 96px;
+    height: 83px;
+    left: calc(50% - 96px/2);
+    top: calc(50% - 83px/2 - 0.5px);
+}
+
+h4{
+   /* Sign In */
+
+position: absolute;
+width: 93px;
+height: 34px;
+left: 30px;
+top: 335px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 34px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+
+}
