@@ -115,7 +115,9 @@
 
 <body>
     <div class="container">
-        <svg class="shapes" width="390" height="720" viewBox="0 0 390 720" fill="none"
+        <svg style="width: 80%; /* Scales relative to the screen width */
+  max-height: 40vh; /* Restrict height to avoid overflow */
+  object-fit: contain; /* Maintain aspect ratio */" class="shapes" width="390" height="720" viewBox="0 0 390 720" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <ellipse cx="20.3744" cy="44.76" rx="412.367" ry="424.677" transform="rotate(28 20.3744 44.76)"
                 fill="url(#paint0_linear_2_3)" />
