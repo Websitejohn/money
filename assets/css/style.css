@@ -19,21 +19,6 @@
 
  }
 
-#container {
-  width: 90%; /* Container takes 90% of the screen width */
-  max-width: 500px; /* Prevent it from becoming too wide on larger screens */
-  height: auto; /* Let the height adjust based on content */
-}
-
-
-
- /* Container for Layout */
- .container {
-     width: 90%;
-     max-width: 500px;
-height: auto;
- }
-
  /* Logo */
  .logo_white {
      position: absolute;
