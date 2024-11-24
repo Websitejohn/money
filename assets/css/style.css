@@ -25,23 +25,13 @@
   height: auto; /* Let the height adjust based on content */
 }
 
-@media (max-width: 768px) { /* For tablets and smaller */
-  #container {
-    width: 95%;
-  }
-}
 
-@media (max-width: 480px) { /* For smaller mobile screens */
-  #container {
-    width: 100%;
-    
-  }
-}
 
  /* Container for Layout */
  .container {
-     width: 100%;
-     max-width: 400px;
+     width: 90%;
+     max-width: 500px;
+height: auto;
  }
 
  /* Logo */
