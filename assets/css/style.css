@@ -9,10 +9,9 @@
      font-family: 'Inter', sans-serif;
      position: relative;
      width: 100%;
-     min-height: 100vh;
+     height: 100vh;
      background: #FFFFFF;
-     margin: 0;
-     height: 100%;
+     margin: 0;
      padding: 0;
 
  }
