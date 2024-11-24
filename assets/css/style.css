@@ -1,121 +1,277 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+ /* General Reset */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
 
-body {
-    font-family: 'Inter', sans-serif;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+ body html {
+     font-family: 'Inter', sans-serif;
+     position: relative;
+     width: 100%;
+     min-height: 100vh;
+     background: #FFFFFF;
+     margin: 0;
+     height: 100%;
+     padding: 0;
+     overflow-x: hidden;
 
-/* Logo */
-.logo_white {
+ }
+
+ /* Container for Layout */
+ .container {
+     width: 100%;
+     max-width: 400px;
+ }
+
+ /* Logo */
+ .logo-white {
+     height: 59px;
+     left: 52px;
+     opacity: 1;
+     position: absolute;
+     top: 64px;
+     width: 60px;
+     --z-index: 1;
+     background-color: transparent;
+     background-size: 100% 100%;
+ }
+
+
+ .welcome .sign-up-button-C61RwL {
+    --z-index: 3;
+    background-color: transparent;
+    cursor: pointer;
+    height: 73px;
+    left: 38px;
+    opacity: 1;
     position: absolute;
-    width: 60px;
-    height: 59px;
-    top: 64px;
-    left: 52px;
-}
+    top: 707px;
+    width: 315px;
+  }
 
-h3 {
+  .welcome .rectangle-2-mT7s7X {
+    --z-index: 0;
+    background-color: transparent;
+    border: 1px solid;
+    border-color: #2743fd;
+    border-radius: 28px;
+    height: 72px;
+    left: 0px;
+    opacity: 1;
     position: absolute;
-    top: 139px;
-    left: 52px;
+    top: 0px;
+    width: 315px;
+  }
 
-    font-family: 'Inter', sans-serif;
+  .welcome .sign-up-mT7s7X {
+    --z-index: 1;
+    background-color: transparent;
+    color: #2743fd;
+    font-family: 'Montserrat', Helvetica;
+    font-size: 20px;
+    font-style: normal;
     font-weight: 400;
-    font-size: 28px;
-    line-height: 34px;
-    color: #FFFFFF;
-}
-
-/* Sign In Button */
-.signin {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #2847FC;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-/* Sign Up Button */
-.signup_button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #FFFFFF;
-    color: #2847FC;
-    border: 1px solid #2847FC;
-    cursor: pointer;
-}
-
-/* Forgot Password? */
-h5 a {
+    height: auto;
+    left: 20px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    opacity: 1;
     position: absolute;
-    top: 552px;
-    left: 30px;
-    font-size: 14px;
-    line-height: 17px;
-    color: #2847FC;
-}
+    text-align: left;
+    top: 23px;
+    white-space: nowrap;
+    width: auto;
+  }
 
-h5 a:hover {
-    color: #0629f3;
-}
+  .welcome .mask-group-mT7s7X {
+    --z-index: 2;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/674094e8802570ed1128c17b/releases/67409619e632114b3021103f/img/mask-group-24@2x.png);
+    background-size: 100% 100%;
+    height: 72px;
+    left: 0px;
+    opacity: 1;
+    position: absolute;
+    top: 1px;
+    width: 315px;
+  }
 
-/* Launch Screen */
-.launchscreen {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #FFFFFF;
-}
+  .welcome .right-arrow-1-mT7s7X {
+    --z-index: 3;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/674094e8802570ed1128c17b/releases/67409619e632114b3021103f/img/right-arrow-1-9.svg);
+    background-size: 100% 100%;
+    height: 15px;
+    left: 269px;
+    opacity: 1;
+    position: absolute;
+    top: 29px;
+    width: 19px;
+  }
 
-/* Colorful-Logo 1 */
-.logo {
-    width: 96px;
-    height: 83px;
-}
+  .welcome .sign-in-button-C61RwL {
+    --z-index: 4;
+    background-color: transparent;
+    height: 73px;
+    left: 38px;
+    opacity: 1;
+    position: absolute;
+    top: 619px;
+    width: 315px;
+  }
 
-/* Media Queries */
-@media (max-width: 768px) {
-    h3 {
-        font-size: 24px;
-    }
+  .welcome .rectangle-2-xhIs6s {
+    --z-index: 0;
+    background: linear-gradient(180deg, rgb(20.000000707805157, 51.00000075995922, 255) 0%, rgb(73.00000324845314, 96.00000187754631, 249.00000035762787) 100%);
+    background-color: transparent;
+    border-radius: 28px;
+    box-shadow: 0px 8px 16px #1b39ff33;
+    height: 72px;
+    left: 0px;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    width: 315px;
+  }
 
-    .signin,
-    .signup_button {
-        width: 80%;
-    }
+  .welcome .sign-in-xhIs6s {
+    --z-index: 1;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: 'Montserrat', Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: 19px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    opacity: 1;
+    position: absolute;
+    text-align: left;
+    top: 23px;
+    white-space: nowrap;
+    width: auto;
+  }
 
-    h5 a {
-        left: 15px;
-        font-size: 12px;
-    }
-}
+  .welcome .mask-group-xhIs6s {
+    --z-index: 2;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/674094e8802570ed1128c17b/releases/67409619e632114b3021103f/img/mask-group-25@2x.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+    height: 72px;
+    left: 0px;
+    opacity: 1;
+    position: absolute;
+    top: 1px;
+    width: 315px;
+  }
 
-@media (min-width: 1024px) {
-    h3 {
-        font-size: 36px;
-    }
+  .welcome .right-arrow-1-xhIs6s {
+    --z-index: 3;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/674094e8802570ed1128c17b/releases/67409619e632114b3021103f/img/right-arrow-1-10.svg);
+    background-size: 100% 100%;
+    height: 15px;
+    left: 269px;
+    opacity: 1;
+    position: absolute;
+    top: 29px;
+    width: 19px;
+  }
 
-    .signin,
-    .signup_button {
-        max-width: 400px;
-    }
-}
+  .welcome .light-portrait-1-C61RwL {
+    --z-index: 5;
+    background-color: transparent;
+    background-image: url(https://cdn.animaapp.com/projects/674094e8802570ed1128c17b/releases/67409619e632114b3021103f/img/light---portrait-1-6.svg);
+    background-size: 100% 100%;
+    height: 32px;
+    left: 128px;
+    opacity: 1;
+    position: absolute;
+    top: 812px;
+    width: 134px;
+  }
+
+ /* Sign In Button */
+ .signin {
+     position: absolute;
+     left: 50%;
+     top: 619px;
+     transform: translateX(-50%);
+     /* Centers the button horizontally */
+
+
+ }
+
+ /* Sign Up Button */
+ .signup_button {
+     position: absolute;
+     left: 50%;
+     top: 707px;
+     /* Adjusted spacing between buttons */
+     transform: translateX(-50%);
+     /* Centers the button horizontally */
+     margin-top: 15px;
+ }
+
+ /* Forgot Password? */
+ h5 a {
+     position: absolute;
+     width: 119px;
+     height: 17px;
+     left: 30px;
+     top: 552px;
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 17px;
+     /* identical to box height */
+
+     color: #2847FC;
+ }
+
+ h5 a:hover {
+     color: #0629f3;
+ }
+
+ /* Launch Screen */
+ .lauchscreen {
+     position: relative;
+
+     background: #FFFFFF;
+ }
+
+ /* Colorful-Logo 1 */
+ .logo {
+     position: absolute;
+     width: 96px;
+     height: 83px;
+     left: calc(50% - 96px/2);
+     top: calc(50% - 83px/2 - 0.5px);
+ }
+
+ h4 {
+     /* Sign In */
+
+     position: absolute;
+     width: 93px;
+     height: 34px;
+     left: 30px;
+     top: 335px;
+
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 28px;
+     line-height: 34px;
+     /* identical to box height */
+
+     color: #000000;
+
+
+
+
+ }
