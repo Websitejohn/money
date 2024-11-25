@@ -15,7 +15,7 @@
             overflow: hidden;
             overflow-x: hidden;
             position: relative;
-            width: 100%;
+            width: 390px;
         }
 
         .onboarding-1 .savings {
@@ -221,6 +221,90 @@
             top: 166px;
             width: 280px;
         }
+
+        @media (max-width: 768px) {
+            .onboarding-1 {
+                width: 100%;
+                /* Ensure it fits within the viewport */
+                max-width: 390px;
+                /* Prevent it from getting too wide */
+                /* Allow height to adapt if necessary */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .onboarding-1 .logo {
+                left: 50%;
+                /* Center horizontally */
+                transform: translateX(-50%);
+                /* Adjust for centering */
+                top: 50px;
+                /* Move slightly up for better spacing */
+                width: 40px;
+                /* Reduce size */
+                height: 40px;
+            }
+
+            .onboarding-1 .save-your-money {
+                left: 10%;
+                /* Add padding for smaller screens */
+                width: 80%;
+                /* Ensure text stays within bounds */
+                font-size: 20px;
+                /* Adjust font size */
+                line-height: 28px;
+                top: 460px;
+                /* Adjust vertical spacing */
+            }
+
+            .onboarding-1 .get {
+                left: 10%;
+                width: 80%;
+                font-size: 16px;
+                line-height: 24px;
+                top: 540px;
+            }
+
+            .onboarding-1 .indicators {
+                left: 10%;
+                width: 60px;
+                /* Adjust indicator width */
+                top: 680px;
+            }
+
+            .onboarding-1 .next {
+                left: 50%;
+                /* Center horizontally */
+                transform: translateX(-50%);
+                width: 140px;
+                /* Reduce size */
+                top: 720px;
+            }
+        }
+
+        img,
+        .onboarding-1 .mask-group,
+        .onboarding-1 .saving-1 {
+            max-width: 100%;
+            /* Maintain aspect ratio */
+        }
+
+        @media (max-width: 768px) {
+            .onboarding-1 .saving-1 {
+                width: 280px;
+                /* Scale down for smaller screens */
+                left: 50%;
+                transform: translateX(-50%);
+                top: 150px;
+            }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            /* Disable horizontal scrolling */
+        }
     </style>
 </head>
 
@@ -243,7 +327,7 @@
 
         <div class="ellipse-10-C61RwL"></div>
 
-        <div class="save-your-money">Save your money conveniently.</div>
+        <div class="save-your-money">Save your money<br>conveniently.</div>
         <div class="get">Get 5% cash back for each transaction an spend it easily.</div>
 
         <div class="indicators">
@@ -253,11 +337,11 @@
         </div>
 
         <div class="next">
-        <div class="rectangle-2" data-id="18:47"></div>
-        <div class="next-zjbkPB" data-id="17:30">Next</div>
-        <div class="mask-group" data-id="18:49"></div>
-        <div class="right-arrow" data-id="18:39"></div>
-      </div>
+            <div class="rectangle-2" data-id="18:47"></div>
+            <div class="next-zjbkPB" data-id="17:30">Next</div>
+            <div class="mask-group" data-id="18:49"></div>
+            <div class="right-arrow" data-id="18:39"></div>
+        </div>
     </div>
 </body>
 
