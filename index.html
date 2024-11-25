@@ -10,12 +10,28 @@
         /* Saving 1 */
         .onboarding-1 {
             background-color: #ffffff;
-            height: 844px;
             opacity: 1;
-            overflow: hidden;
-            overflow-x: hidden;
+            /* Always fits the screen height */
             position: relative;
-            width: 390px;
+            width: 100vw;
+            /* Full screen width */
+            max-width: 390px;
+            /* Limit width for larger devices */
+            margin: 0 auto;
+            /* Center horizontally on larger screens */
+            overflow: hidden;
+            /* Prevent scrolling */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* Ensures content spreads evenly */
+            align-items: center;
+            /* Centers items horizontally */
+            padding: 16px;
+            /* Adds space around content */
+            /* Full screen height */
+            box-sizing: border-box;
+            /* Includes padding in total height */
         }
 
         .onboarding-1 .savings {
@@ -32,12 +48,12 @@
             --z-index: 0;
             background-color: transparent;
             background-size: 100% 100%;
-            height: 52px;
+            height: auto;
             left: 161px;
             opacity: 1;
             position: absolute;
             top: 74px;
-            width: 53px;
+            width: 10vw;
         }
 
         .onboarding-1 .ellipse-10-C61RwL {
@@ -61,14 +77,13 @@
             font-style: normal;
             font-weight: 700;
             height: auto;
-            left: 37px;
             letter-spacing: 0.00px;
             line-height: 36px;
             opacity: 1;
             position: absolute;
             text-align: left;
-            top: 487px;
-            width: 276px;
+            margin-top: auto;
+            /* Dynamically adjust based on content */
         }
 
         .onboarding-1 .get {
@@ -142,10 +157,12 @@
             background-color: transparent;
             cursor: pointer;
             height: 73px;
-            left: 199px;
             opacity: 1;
             position: absolute;
-            top: 702px;
+            position: relative;
+            /* Changes from absolute to relative */
+            margin-top: auto;
+            /* Pushes it to the bottom without overflow */
             width: 155px;
         }
 
@@ -291,7 +308,7 @@
 
         @media (max-width: 768px) {
             .onboarding-1 .saving-1 {
-                width: 280px;
+                width: 200px;
                 /* Scale down for smaller screens */
                 left: 50%;
                 transform: translateX(-50%);
@@ -343,6 +360,39 @@
             <div class="right-arrow" data-id="18:39"></div>
         </div>
     </div>
+
+<script>
+    function adjustLayout() {
+        const onboardingElement = document.querySelector('.onboarding-1');
+        const savingsElement = document.querySelector('.onboarding-1 .savings');
+        const logoElement = document.querySelector('.onboarding-1 .logo');
+        const saveYourMoneyElement = document.querySelector('.onboarding-1 .save-your-money');
+
+        // Get the current viewport height and width
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+
+        // Set the scaling factor based on the viewport size
+        const scaleFactor = Math.min(viewportWidth / 390, viewportHeight / 844); // Example base values
+
+        // Dynamically adjust the onboarding container
+        onboardingElement.style.width = `${viewportWidth}px`;
+        onboardingElement.style.height = `${viewportHeight}px`;
+
+        // Adjust child elements based on scaling factor
+        savingsElement.style.width = `${280 * scaleFactor}px`;
+        savingsElement.style.height = `${202 * scaleFactor}px`;
+
+        logoElement.style.width = `${53 * scaleFactor}px`;
+        logoElement.style.height = `${52 * scaleFactor}px`;
+
+        saveYourMoneyElement.style.fontSize = `${24 * scaleFactor}px`;
+    }
+
+    // Adjust layout on load and resize
+    window.addEventListener('load', adjustLayout);
+    window.addEventListener('resize', adjustLayout);
+</script>
 </body>
 
 </html>
