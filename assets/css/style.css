@@ -3,10 +3,12 @@
   box-sizing: border-box;
 }
 .welcome {
-  background: #ffffff;
-  height: 844px;
-  position: relative;
-  overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
 }
 .shapes {
   position: absolute;
@@ -95,7 +97,12 @@
   left: calc(50% - 157px);
   bottom: 7.58%;
   top: 83.77%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
+.sign-up-button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button */
+  }
+
 .rectangle-2 {
   border-radius: 28px;
   border-style: solid;
