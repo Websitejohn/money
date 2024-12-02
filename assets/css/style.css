@@ -1,285 +1,205 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box; }
-
-html {
-  font-family: sans-serif;
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
-
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display: block; }
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
+.welcome,
+.welcome * {
+  box-sizing: border-box;
+}
+.welcome {
+  background: #ffffff;
+  height: 844px;
+  position: relative;
+  overflow: hidden;
+}
+.shapes {
+  position: absolute;
+  inset: 0;
+}
+.ellipse-3 {
+  background: linear-gradient(
+    53.25deg,
+    rgba(199, 47, 248, 0) 0%,
+    rgba(199, 47, 248, 1) 100%
+  );
+  border-radius: 50%;
+  width: 211.47%;
+  height: 100.63%;
+  position: absolute;
+  right: -74.46%;
+  left: -37.01%;
+  bottom: 61.43%;
+  top: -62.06%;
+  transform-origin: 0 0;
+  transform: rotate(28deg) scale(1, 1);
+}
+.ellipse-2 {
+  background: linear-gradient(
+    145.35deg,
+    rgba(198, 48, 248, 0) 0%,
+    rgba(47, 86, 248, 1) 100%
+  );
+  border-radius: 50%;
+  width: 211.47%;
+  height: 100.63%;
+  position: absolute;
+  right: -43.49%;
+  left: -67.98%;
+  bottom: 52.85%;
+  top: -53.48%;
+  transform-origin: 0 0;
+  transform: rotate(28deg) scale(1, 1);
+}
+.ellipse-1 {
+  background: linear-gradient(
+    137.76deg,
+    rgba(82, 100, 249, 1) 0%,
+    rgba(58, 249, 239, 1) 100%
+  );
+  border-radius: 50%;
+  width: 211.47%;
+  height: 100.63%;
+  position: absolute;
+  right: -35.18%;
+  left: -76.29%;
+  bottom: 63.95%;
+  top: -64.59%;
+  transform-origin: 0 0;
+  transform: rotate(28deg) scale(1, 1);
+}
+.logo-white-1 {
+  width: 60px;
+  height: 59px;
+  position: absolute;
+  left: 52px;
+  top: 64px;
+  overflow: hidden;
+}
+.page-1 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.welcome-back {
+  color: #ffffff;
   text-align: left;
-  background-color: #fff; }
-
-[tabindex="-1"]:focus:not(:focus-visible) {
-  outline: 0 !important; }
-
-
- /* Container for Layout */
- .container {
-     width: 100%;
-     max-width: 400px;
- }
-
- /* Logo */
- .logo-white {
-     height: 59px;
-     left: 52px;
-     opacity: 1;
-     position: absolute;
-     top: 64px;
-     width: 60px;
-     --z-index: 1;
-     background-color: transparent;
-     background-size: 100% 100%;
- }
-
-
- .welcome .sign-up-button-C61RwL {
-    --z-index: 3;
-    background-color: transparent;
-    cursor: pointer;
-    height: 73px;
-    left: 38px;
-    opacity: 1;
-    position: absolute;
-    top: 707px;
-    width: 315px;
-  }
-
-  .welcome .rectangle-2-mT7s7X {
-    --z-index: 0;
-    background-color: transparent;
-    border: 1px solid;
-    border-color: #2743fd;
-    border-radius: 28px;
-    height: 72px;
-    left: 0px;
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    width: 315px;
-  }
-
-  .welcome .sign-up-mT7s7X {
-    --z-index: 1;
-    background-color: transparent;
-    color: #2743fd;
-    font-family: 'Montserrat', Helvetica;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    height: auto;
-    left: 20px;
-    letter-spacing: 0.00px;
-    line-height: normal;
-    opacity: 1;
-    position: absolute;
-    text-align: left;
-    top: 23px;
-    white-space: nowrap;
-    width: auto;
-  }
-
-  .welcome .mask-group-mT7s7X {
-    --z-index: 2;
-    background-color: transparent;
-    background-image: url(https://cdn.animaapp.com/projects/674094e8802570ed1128c17b/releases/67409619e632114b3021103f/img/mask-group-24@2x.png);
-    background-size: 100% 100%;
-    height: 72px;
-    left: 0px;
-    opacity: 1;
-    position: absolute;
-    top: 1px;
-    width: 315px;
-  }
-
-  .welcome .right-arrow-1-mT7s7X {
-    --z-index: 3;
-    background-color: transparent;
-    background-image: url(https://cdn.animaapp.com/projects/674094e8802570ed1128c17b/releases/67409619e632114b3021103f/img/right-arrow-1-9.svg);
-    background-size: 100% 100%;
-    height: 15px;
-    left: 269px;
-    opacity: 1;
-    position: absolute;
-    top: 29px;
-    width: 19px;
-  }
-
-  .welcome .sign-in-button-C61RwL {
-    --z-index: 4;
-    background-color: transparent;
-    height: 73px;
-    left: 38px;
-    opacity: 1;
-    position: absolute;
-    top: 619px;
-    width: 315px;
-  }
-
-  .welcome .rectangle-2-xhIs6s {
-    --z-index: 0;
-    background: linear-gradient(180deg, rgb(20.000000707805157, 51.00000075995922, 255) 0%, rgb(73.00000324845314, 96.00000187754631, 249.00000035762787) 100%);
-    background-color: transparent;
-    border-radius: 28px;
-    box-shadow: 0px 8px 16px #1b39ff33;
-    height: 72px;
-    left: 0px;
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    width: 315px;
-  }
-
-  .welcome .sign-in-xhIs6s {
-    --z-index: 1;
-    background-color: transparent;
-    color: #ffffff;
-    font-family: 'Montserrat', Helvetica;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    height: auto;
-    left: 19px;
-    letter-spacing: 0.00px;
-    line-height: normal;
-    opacity: 1;
-    position: absolute;
-    text-align: left;
-    top: 23px;
-    white-space: nowrap;
-    width: auto;
-  }
-
-  .welcome .mask-group-xhIs6s {
-    --z-index: 2;
-    background-color: transparent;
-    background-image: url(https://cdn.animaapp.com/projects/674094e8802570ed1128c17b/releases/67409619e632114b3021103f/img/mask-group-25@2x.png);
-    background-size: 100% 100%;
-    cursor: pointer;
-    height: 72px;
-    left: 0px;
-    opacity: 1;
-    position: absolute;
-    top: 1px;
-    width: 315px;
-  }
-
-  .welcome .right-arrow-1-xhIs6s {
-    --z-index: 3;
-    background-color: transparent;
-    background-image: url(https://cdn.animaapp.com/projects/674094e8802570ed1128c17b/releases/67409619e632114b3021103f/img/right-arrow-1-10.svg);
-    background-size: 100% 100%;
-    height: 15px;
-    left: 269px;
-    opacity: 1;
-    position: absolute;
-    top: 29px;
-    width: 19px;
-  }
-
-  .welcome .light-portrait-1-C61RwL {
-    --z-index: 5;
-    background-color: transparent;
-    background-image: url(https://cdn.animaapp.com/projects/674094e8802570ed1128c17b/releases/67409619e632114b3021103f/img/light---portrait-1-6.svg);
-    background-size: 100% 100%;
-    height: 32px;
-    left: 128px;
-    opacity: 1;
-    position: absolute;
-    top: 812px;
-    width: 134px;
-  }
-
- /* Sign In Button */
- .signin {
-     position: absolute;
-     left: 50%;
-     top: 619px;
-     transform: translateX(-50%);
-     /* Centers the button horizontally */
-
-
- }
-
- /* Sign Up Button */
- .signup_button {
-     position: absolute;
-     left: 50%;
-     top: 707px;
-     /* Adjusted spacing between buttons */
-     transform: translateX(-50%);
-     /* Centers the button horizontally */
-     margin-top: 15px;
- }
-
- /* Forgot Password? */
- h5 a {
-     position: absolute;
-     width: 119px;
-     height: 17px;
-     left: 30px;
-     top: 552px;
-     font-style: normal;
-     font-weight: 400;
-     font-size: 14px;
-     line-height: 17px;
-     /* identical to box height */
-
-     color: #2847FC;
- }
-
- h5 a:hover {
-     color: #0629f3;
- }
-
- /* Launch Screen */
- .lauchscreen {
-     position: relative;
-
-     background: #FFFFFF;
- }
-
- /* Colorful-Logo 1 */
- .logo {
-     position: absolute;
-     width: 96px;
-     height: 83px;
-     left: calc(50% - 96px/2);
-     top: calc(50% - 83px/2 - 0.5px);
- }
-
- h4 {
-     /* Sign In */
-
-     position: absolute;
-     width: 93px;
-     height: 34px;
-     left: 30px;
-     top: 335px;
-
-     font-family: 'Inter';
-     font-style: normal;
-     font-weight: 700;
-     font-size: 28px;
-     line-height: 34px;
-     /* identical to box height */
-
-     color: #000000;
-
-
-
-
- }
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  position: absolute;
+  left: 52px;
+  top: 139px;
+}
+.sign-up-button {
+  width: 315px;
+  height: 8.65%;
+  position: absolute;
+  left: calc(50% - 157px);
+  bottom: 7.58%;
+  top: 83.77%;
+}
+.rectangle-2 {
+  border-radius: 28px;
+  border-style: solid;
+  border-color: #2743fd;
+  border-width: 1px;
+  width: 315px;
+  height: 72px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.sign-up {
+  color: #2743fd;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 20px;
+  top: 24px;
+}
+.mask-group {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  overflow: visible;
+}
+.right-arrow-1 {
+  width: 19px;
+  height: 15px;
+  position: absolute;
+  left: 269px;
+  top: 29px;
+  overflow: hidden;
+}
+.clip-path-group {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.sign-in-button {
+  width: 315px;
+  height: 8.65%;
+  position: absolute;
+  left: calc(50% - 157px);
+  bottom: 18.01%;
+  top: 73.34%;
+}
+.rectangle-22 {
+  background: linear-gradient(
+    -78.68deg,
+    rgba(20, 51, 255, 1) 0%,
+    rgba(73, 96, 249, 1) 100%
+  );
+  border-radius: 28px;
+  width: 315px;
+  height: 72px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  box-shadow: 0px 8px 16px 0px rgba(27, 57, 255, 0.2);
+}
+.sign-in {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 19px;
+  top: 24px;
+}
+.mask-group2 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  overflow: visible;
+}
+.clip-path-group2 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.light-portrait-1 {
+  height: 34px;
+  position: absolute;
+  right: 128px;
+  left: 128px;
+  bottom: -2px;
+  overflow: hidden;
+}
+.bars-home-indicator-i-phone-light-portrait {
+  width: 100%;
+  height: 14.71%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 23.53%;
+  top: 61.76%;
+  overflow: visible;
+}

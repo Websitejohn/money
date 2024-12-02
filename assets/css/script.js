@@ -1,29 +1,27 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const emailInput = document.getElementById("email");
-    const tickIcon = document.querySelector(".tick-icon");
-    const passwordInput = document.getElementById("password");
-    const eyeIcon = document.querySelector(".eye-icon i");
-  
-    // Show tick icon when email input is valid
-    emailInput.addEventListener("input", () => {
-      if (emailInput.value.includes("@") && emailInput.value.includes(".")) {
-        tickIcon.style.display = "block";
-      } else {
-        tickIcon.style.display = "none";
-      }
-    });
-  
-    // Toggle password visibility
-    eyeIcon.addEventListener("click", () => {
-      if (passwordInput.type === "password") {
-        passwordInput.type = "text";
-        eyeIcon.classList.remove("fa-eye-slash");
-        eyeIcon.classList.add("fa-eye");
-      } else {
-        passwordInput.type = "password";
-        eyeIcon.classList.remove("fa-eye");
-        eyeIcon.classList.add("fa-eye-slash");
-      }
-    });
-  });
-  
+// script.js
+
+// Function to redirect to the sign-up page
+function redirectToSignUp(event) {
+  event.preventDefault(); // Prevent default action
+  window.location.href = 'sign-up.html'; // Change to your actual sign-up page URL
+}
+
+// Function to redirect to the sign-in page
+function redirectToSignIn(event) {
+  event.preventDefault(); // Prevent default action
+  window.location.href = 'sign-in.html'; // Change to your actual sign-in page URL
+}
+
+// Add event listeners to buttons after the document has loaded
+document.addEventListener('DOMContentLoaded', function() {
+  const signUpButton = document.querySelector('.sign-up-button-C61RwL');
+  const signInButton = document.querySelector('.sign-in-button-C61RwL');
+
+  if (signUpButton) {
+      signUpButton.addEventListener('click', redirectToSignUp);
+  }
+
+  if (signInButton) {
+      signInButton.addEventListener('click', redirectToSignIn);
+  }
+});
