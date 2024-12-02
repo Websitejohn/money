@@ -203,30 +203,7 @@ body {
     top: 24px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) { /* For tablets and smaller screens */
-    .sign-up-button {
-      width: 80%; /* Scale width to fit smaller screens */
-      top: 85%; /* Adjust the top position */
-    }
-  
-    .sign-in-button {
-      width: 80%; /* Scale width to fit smaller screens */
-      top: 75%; /* Adjust the top position */
-    }
-  }
-  
-  @media (max-width: 480px) { /* For mobile phones */
-    .sign-up-button {
-      width: 90%; /* Further reduce width */
-      top: 85%; /* Adjust the top position */
-    }
-  
-    .sign-in-button {
-      width: 90%; /* Further reduce width */
-      top: 75%; /* Adjust the top position */
-    }
-  }
+
 .mask-group2 {
     height: auto;
     position: absolute;
