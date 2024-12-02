@@ -13,12 +13,18 @@ body {
     margin: 0;
     /* Removes default margin */
     padding: 0;
+    position: relative;
     /* Removes default padding */
     width: 100vw;
     overflow: hidden;
     overflow-x: hidden;
 }
-
+.welcome {
+    width: 100vw;
+    overflow: hidden;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
 .shapes {
     position: absolute;
     inset: 0;
@@ -109,11 +115,12 @@ body {
     top: 83.77%;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
-
+.sign-in-button:hover,
 .sign-up-button:hover {
     transform: scale(1.05);
     /* Slightly enlarge the button */
 }
+
 
 .rectangle-2 {
     border-radius: 28px;
@@ -169,7 +176,7 @@ body {
     position: absolute;
     left: calc(50% - 157px);
     bottom: 18.01%;
-    top: 73.34%;
+    top: 65.24%;
 }
 
 .rectangle-22 {
@@ -196,6 +203,30 @@ body {
     top: 24px;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) { /* For tablets and smaller screens */
+    .sign-up-button {
+      width: 80%; /* Scale width to fit smaller screens */
+      top: 85%; /* Adjust the top position */
+    }
+  
+    .sign-in-button {
+      width: 80%; /* Scale width to fit smaller screens */
+      top: 75%; /* Adjust the top position */
+    }
+  }
+  
+  @media (max-width: 480px) { /* For mobile phones */
+    .sign-up-button {
+      width: 90%; /* Further reduce width */
+      top: 85%; /* Adjust the top position */
+    }
+  
+    .sign-in-button {
+      width: 90%; /* Further reduce width */
+      top: 75%; /* Adjust the top position */
+    }
+  }
 .mask-group2 {
     height: auto;
     position: absolute;
